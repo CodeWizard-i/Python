@@ -1,0 +1,167 @@
+print("Unit Converter - Speed, Frequency & Temperature")
+
+print()
+
+print("Fahrenheit to ")
+
+print()
+
+f = input("Fahrenheit = ")
+c = (float(f) - 32) * 5 / 9
+k = (float(f) - 32) * 5 / 9 + 273.15
+
+print()
+
+print("Celcius = " , c)
+print("Kelvin = " , k)
+
+print()
+
+print("Celcius to ")
+
+print()
+
+c = input("Celcius = ")
+f = float(c) * 1.8 + 32
+k = float(c) + 273.15
+
+print()
+
+print("Fahrenheit = " , f)
+print("Kelvin = " , k)
+
+print()
+
+print("Kelvin to")
+
+print()
+
+k = input("Kelvin = ")
+c = float(k) - 273.15
+f = (float(k) - 273.15) * 9 / 5 + 32
+
+print()
+
+print("Celcius = ", c)
+print("Fahrenheit = " , f)
+
+print()
+
+print("Frequency")
+
+print()
+
+print("Hz to")
+
+print()
+
+h = input("Hertz = ")
+kh = float(h) / 1000
+mh = float(h) / 1000000
+gh = float(h) / 1000000000
+
+print()
+
+print("Kilohertz = " , kh)
+print("Megahertz = " , mh)
+print("Gigahertz = " , gh)
+
+print()
+
+print("KHz to")
+
+print()
+
+kh = input("Kilohertz = ")
+h = float(kh) * 1000
+mh = float(kh) / 1000
+gh = float(kh) / 1000000
+
+print()
+
+print("Hertz = " , h)
+print("Megahertz = " , mh)
+print("Gigahertz = " , gh)
+
+print()
+
+print("MHz to")
+
+print()
+
+mh = input("Megahertz = ")
+h = float(mh) * 1000000
+kh = float(mh) * 1000
+gh = float(mh) / 1000
+
+print()
+
+print("Hertz = " , h)
+print("Kilohertz = " , kh)
+print("Gigahertz = " , gh)
+
+print()
+
+print("GHz to")
+
+print()
+
+gh = input("Gigahertz = ")
+h = float(gh) * 1000000000
+kh = float(gh) * 1000000
+mh = float(gh) * 1000
+
+print()
+
+print("Hertz = " , h)
+print("Kilohertz = " , kh)
+print("Megahertz = " , mh)
+
+print()
+
+print("Speed")
+
+print()
+
+print("Metre Per Second to")
+
+print()
+
+mtps = input("Metre Per Second = ")
+kmh = float(mtps) * 3.6
+mph = float(mtps) * 2.237
+
+print()
+
+print("Kilometre Per Hour = " , kmh)
+print("Mile Per Hour = " , mph)
+
+print()
+
+print("Kilometre Per Hour to")
+
+print()
+
+kmh = input("Kilometre Per Hour = ")
+mtps = float(kmh) / 3.6
+mph = float(kmh) / 1.6
+
+print()
+
+print("Metre Per Second = " , mtps)
+print("Mile Per Hour = " , mph)
+
+print()
+
+print("Mile Per Hour to")
+
+print()
+
+kmh = input("Mile Per Hour = ")
+mtps = float(mph) * 2.237
+kmh = float(mph) * 1.6
+
+print()
+
+print("Metre Per Second = " , mtps)
+print("Kilometre Per Hour = " , kmh)
