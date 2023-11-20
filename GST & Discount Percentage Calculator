@@ -1,0 +1,27 @@
+print("GST Calculator")
+
+print()
+
+price = input("Enter Price = ")
+discount_percent = input("GST Percentage = ")
+discount = float(price) / 100 * float(discount_percent)
+
+print()
+
+print(price , "+" , discount , "=" , float(price) + float(discount))
+
+print()
+
+print("Discount Percentage Calculator")
+
+print()
+
+price = input("Enter Price = ")
+discount_percent = input("Discount Percentage = ")
+discount = (float(price) / 100) * float(discount_percent)
+
+print()
+
+print(price , "-" , discount , "=" , float(price) - float(discount))
+
+print()
