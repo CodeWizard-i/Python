@@ -1,0 +1,320 @@
+import math
+import sys
+import time
+import random
+
+sys.setrecursionlimit(50)
+def factorial(n):
+  if n == 0:
+      return 1
+  else:
+      return n * factorial(n-1)
+    
+print("Hi, I am a mini version of the ChatGPT bot.")
+print()
+time.sleep(1)
+a = input("Before we start to do anything, what is your first name? - ")
+print()
+time.sleep(1)
+print("Hello" , a, ", What would do you like to do today?")
+print()
+print("Type the number of the option you want to select.")
+print()
+print("1 - Essay or Paragraph")
+print("2 - Mathematical Calculator")
+print("3 - Random Facts")
+print("4 - Unit Converter")
+print()
+time.sleep(1)
+b = input("Type the number - ")
+print()
+if b == '1':
+    print()
+    print("Essay or Paragraph")
+    print()
+    print("Type the number of the option you want to select.")
+    print()
+    time.sleep(1)
+    c = print("5 - About Park")
+    d = print("6 - About School")
+    e = print("7 - About Football")
+    print()
+    time.sleep(1)
+    f = input("Type the number - ")
+    if f == '5':
+        print()
+        print("A park is a place where there are many trees and plants and also swings for children. It is a place for enjoyment where children and people can go to walk, run, play or sit. A park can be of different size. A park can be big or small. It can have different things because they are made for a different purpose. Some parks have many swings for children. Swings like a merry-go-round, see-saw, slides are placed where all children can enjoy together. Some parks are for adults and they have fitness equipment, walking path and benches for old people. People go to the park for many reasons. Children go to a park in the evening to play with friends. Some teachers and parents also take them to the park for a picnic. Many people go there in the morning or in the evening for a walk to enjoy the greenery and breathe fresh air. Some go in groups to do exercise and yoga together. Some people go there to do activities like reading, painting or cycling. Parks play a very important role in society. They help people to stay healthy and fit. walking on grass and staying around a lot of trees is very healthy. It also reduces stress and makes people happy. People meet their friends and spend quality time. Parks are a safe place for children where there are no vehicles and they can play there safely. Parks also make our society look beautiful and green. Trees are planted here and it is also good for the environment. Today people remove the parks to make buildings and houses. Children play on the road and they are unsafe. Trees are not planted around and this affects our environment badly. We must all have one park in an area and keep it clean and green.")
+    elif f == '6':
+        print()
+      
+        print("Education is an essential part of our lives. We are nothing without knowledge, and education is what separates us from others. The main step to acquiring education is enrolling oneself in a school. School serves as the first learning place for most of the people. Similarly, it is the first spark in receiving an education. In this essay on my school, I will tell you why I love my school and what my school has taught me. We have all been to school and we have loved each and every moment we have spent over there as those were the building blocks of our lives. A school is a place where students are taught the fundamentals of life, as well as how to grow and survive in life. It instils in us values and principles that serve as the foundation for a child’s development.")
+      
+    elif f == '7':
+        print()
+        print("Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in North America, Ireland and Australia); gridiron football (specifically American football or Canadian football); Australian rules football; rugby union and rugby league; and Gaelic football. There are a number of references to traditional, ancient, or prehistoric ball games played in many different parts of the world. Contemporary codes of football can be traced back to the codification of these games at English public schools during the 19th century. The expansion and cultural influence of the British Empire allowed these rules of football to spread to areas of British influence outside the directly controlled Empire. By the end of the 19th century, distinct regional codes were already developing: Gaelic football, for example, deliberately incorporated the rules of local traditional football games in order to maintain their heritage. In 1888, The Football League was founded in England, becoming the first of many professional football associations. During the 20th century, several of the various kinds of football grew to become some of the most popular team sports in the world.")
+    else:
+        print("Invalid Option")
+      
+elif b == '2':
+    print()
+    print("Mathematical Calculator")
+    print()
+    print("Type the number of the option you want to select.")
+    print()
+    time.sleep(1)
+    p = print("8 - Prime Number and HCF & LCM Calculator")
+    g = print("9 - Normal Calculator")
+    
+    print()
+    time.sleep(1)
+    k = input("Type the number - ")
+    print()
+
+    if k == '8':
+        print()
+        print("Prime Number & HCF & LCM Calculator")
+        print()
+        print("Prime Numbers")
+        print()
+        u = int(float(input("What is the maximum value you want to calculate ? ")))
+        print()
+      
+        nums = range(2,u)
+
+        def is_prime(num):
+            for x in range(2, num):
+                if (num % x) == 0:
+                    return False
+            return True
+
+        primes = list(filter(is_prime, nums))
+        print(primes)
+
+        print()
+        print("HCF & LCM")
+        print()
+        s = int(float(input("First Number = ")))
+        t = int(float(input("Second Number = ")))
+        print()
+
+        print("HCF = ", math.gcd(s,t))
+        print("LCM = ", math.lcm(s,t))
+  
+    elif k == '9':
+        print()
+        print("Calculator")
+        print()
+        l = input("a = ")
+        m = input("b = ")
+        print()
+        time.sleep(1)
+        print("Addition = ", float(l) + float(m))
+        print("Subtraction = ", float(l) - float(m))
+        print("Multiplication = ", float(l) * float(m))
+        print("Division = ", float(l) / float(m))
+        print()
+        n = input("a = ")
+        print()
+        time.sleep(1)
+        print("Square = ", float(n) * float(n))
+        print("Cube = ", float(n) * float(n) * float(n))
+        square_root = math.sqrt(float(n))
+        cube_root = float(n) ** (1/3)
+        print("Square Root = ", square_root)
+        print("Cube Root = ", cube_root)
+        print("Factorial = " , factorial(int(n)))
+
+elif b == '3':
+    print()
+    print("Random Facts")
+    print()
+    ab = "The Earth is 4.56 billion years old."
+    cd = "A human at average, sleeps for 4 months a year."
+    ef = "Our bodies are made up of very precious metals in small quanties like copper, iron, nickel, gold, silver etc."
+    gh = "If we stack Elon Musk's total net worth as of 2023, in pennies it would be 288,800 km long or 3/4 the distance from Earth to the Moon."
+    ij = "Canada's coastline is the world's largest coastline measuring at 243,042 km."
+    kl = "It is physically impossible for pigs to look up into the sky."
+    mn = "A shrimp's heart is in its head."
+    op = "If you sneeze too hard, you could fracture a rib."
+    qr = "Rubber bands last longer when refrigerated."
+    st = "A shark is the only known fish that can blink with both eyes."
+    
+    facts = [ab, cd, ef, gh, ij, kl, mn, op, qr, st]
+    random_fact = random.choice(facts)
+    print(random_fact)
+
+elif b == '4':
+
+  print()
+
+  print("Unit Converter - Temperature, Speed & Frequency")
+
+  print()
+
+  print("Temperature")
+
+  print()
+
+  print("Fahrenheit to ")
+
+  print()
+
+  f = input("Fahrenheit = ")
+  c = (float(f) - 32) * 5 / 9
+  k = (float(f) - 32) * 5 / 9 + 273.15
+
+  print()
+
+  print("Celcius = " , c)
+  print("Kelvin = " , k)
+
+  print()
+
+  print("Celcius to ")
+
+  print()
+
+  c = input("Celcius = ")
+  f = float(c) * 1.8 + 32
+  k = float(c) + 273.15
+
+  print()
+
+  print("Fahrenheit = " , f)
+  print("Kelvin = " , k)
+
+  print()
+
+  print("Kelvin to")
+
+  print()
+
+  k = input("Kelvin = ")
+  c = float(k) - 273.15
+  f = (float(k) - 273.15) * 9 / 5 + 32
+
+  print()
+
+  print("Celcius = ", c)
+  print("Fahrenheit = " , f)
+
+  print()
+
+  print("Frequency")
+
+  print()
+
+  print("Hz to")
+
+  print()
+
+  h = input("Hertz = ")
+  kh = float(h) / 1000
+  mh = float(h) / 1000000
+  gh = float(h) / 1000000000
+
+  print()
+
+  print("Kilohertz = " , kh)
+  print("Megahertz = " , mh)
+  print("Gigahertz = " , gh)
+
+  print()
+
+  print("KHz to")
+
+  print()
+
+  kh = input("Kilohertz = ")
+  h = float(kh) * 1000
+  mh = float(kh) / 1000
+  gh = float(kh) / 1000000
+
+  print()
+
+  print("Hertz = " , h)
+  print("Megahertz = " , mh)
+  print("Gigahertz = " , gh)
+
+  print()
+
+  print("MHz to")
+
+  print()
+
+  mh = input("Megahertz = ")
+  h = float(mh) * 1000000
+  kh = float(mh) * 1000
+  gh = float(mh) / 1000
+
+  print()
+
+  print("Hertz = " , h)
+  print("Kilohertz = " , kh)
+  print("Gigahertz = " , gh)
+
+  print()
+
+  print("GHz to")
+
+  print()
+
+  gh = input("Gigahertz = ")
+  h = float(gh) * 1000000000
+  kh = float(gh) * 1000000
+  mh = float(gh) * 1000
+
+  print()
+
+  print("Hertz = " , h)
+  print("Kilohertz = " , kh)
+  print("Megahertz = " , mh)
+
+  print()
+
+  print("Speed")
+
+  print()
+
+  print("Metre Per Second to")
+
+  print()
+
+  mtps = input("Metre Per Second = ")
+  kmh = float(mtps) * 3.6
+  mph = float(mtps) * 2.237
+
+  print()
+
+  print("Kilometre Per Hour = " , kmh)
+  print("Mile Per Hour = " , mph)
+
+  print()
+
+  print("Kilometre Per Hour to")
+
+  print()
+
+  kmh = input("Kilometre Per Hour = ")
+  mtps = float(kmh) / 3.6
+  mph = float(kmh) / 1.6
+
+  print()
+
+  print("Metre Per Second = " , mtps)
+  print("Mile Per Hour = " , mph)
+
+  print()
+
+  print("Mile Per Hour to")
+
+  print()
+
+  kmh = input("Mile Per Hour = ")
+  mtps = float(mph) * 2.237
+  kmh = float(mph) * 1.6
+
+  print()
+
+  print("Metre Per Second = " , mtps)
+  print("Kilometre Per Hour = " , kmh)
